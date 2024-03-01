@@ -1,0 +1,17 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: rgba(127, 255, 212, 0.48);
+    color: rgba(68, 6, 254, 0.937);
+    text-shadow: 0 0 10px rgb(48, 1, 255);
+}
+span{
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}

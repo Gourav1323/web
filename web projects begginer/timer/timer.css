@@ -1,0 +1,16 @@
+body{
+    font-family: "Architects daughter";
+    background-color: rgba(0, 255, 255, 0.763);
+}
+.timerContainer0{
+    background-color: rgba(0, 255, 183, 0.803);
+    border: 25px solid rgba(54, 211, 185, 0.245);
+    border-radius: 2px;
+    margin-top: 19%;
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 120px;
+    margin: 0;
+}

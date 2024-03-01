@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@200;600&family=Roboto:wght@300&family=Rubik+Doodle+Triangles&display=swap');
+body { 
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width : 95%;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hexcolors{
+    text-align: center;
+}
+.hexcolors h1{
+    font-size: 2rem;
+    text-transform : uppercase;
+    animation: changecolor 4s infinite alternate;
+}
+.hex-colors h2{
+    font-size:2rem ;
+    margin : 15%;
+
+}
+
+@keyframes changecolor{
+    0%{
+        color: indigo;
+    }
+    10%{
+        color: rgb(26, 20, 25);
+    }
+    20%{
+        color: rgba(103, 35, 170, 0.861);
+    }
+    30%{
+        color: rgb(26, 20, 21);
+    }
+    40%{
+        color: rgb(44, 163, 107);
+    }
+    50%{
+        color: rgb(159, 159, 159);
+    }
+    60%{
+        color: rgb(130, 0, 0);
+    }
+    70%{
+        color: rgb(217, 85, 96);
+    }
+    80%{
+        color: rgb(185, 25, 25);
+    }
+    90%{
+        color: rgba(14, 14, 1, 0.814);
+    }
+    100%{
+        color: rgb(130, 0, 0);
+    }
+}
+@media(max-width : 480px){
+    .hex-colors h1{
+        font-size: 1.5em;
+    }
+    .hex-colors h2{
+        font-size: 1.5em;
+    }
+}

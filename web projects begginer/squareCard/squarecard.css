@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#myCards{
+    display: flex;
+    justify-content:  space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    background-attachment:fixed;
+    background-repeat:repeat ;
+    background-size:cover ;
+    background-position:center center ;
+    background-image: url("/imagecard/backimg.jpg");
+}
+#myCards .card{
+    position: relative;
+    width:380px;
+    height: auto;
+    margin: 20px;
+    cursor: pointer;
+    transition: 1s ease;
+    background-color: white;
+    box-shadow: 4px 4px 9px 0px #ff0b0b92;
+}
+#myCards .card:hover{
+    transform:scale(1.1);
+
+}
+#myCards .card img{
+    width:100%;
+}
+#myCards .card:hover .image{
+    -webkit-filter : brightness(50%) ;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#myCards .middle{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translate(-50%,-50%);
+    -ms-tranform:translate(-50%,-50%);
+    -webkit-filter:brightness(100%) ;
+}
+#myCards .card:hover .middle{
+    opacity: 1;
+}
+@media(max-width:768px){
+    #myCards .card{
+        width:95%;
+    }
+    #myCards .card:hover{
+        transform: scale(1);
+
+    }
+}
+@media(max-width:1200px){
+    #myCards .card{
+        width:200%;
+    }
+}

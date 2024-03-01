@@ -1,0 +1,52 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@200;600&family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(0.25turn,rgba(238, 130, 238, 0.498),rgba(76, 0, 130, 0.411),rgba(0, 0, 255, 0.426),rgba(0, 128, 0, 0.388),rgba(255, 255, 0, 0.418),rgba(255, 166, 0, 0.445),rgba(255, 0, 0, 0.468))
+}
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.digitalClock{
+    /* border:1px solid black; */
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 28px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.399);
+
+}
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+
+
+@media(max-width:768px){
+    #bar1,bar2{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock h1{
+        display: block;
+    }
+}
+@media(max-width:480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}

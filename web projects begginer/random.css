@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: image width 100px;;
+    /* image-rendering: optimizeSpeed; */
+    background-image: url(/img/js4.jpg);
+    color:rgba(45, 241, 241, 0.657)
+}
+h1{
+    padding: 50px;
+}
+
+h1,h2,h3,h4,h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding:20px;
+}
+.centerdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    font-size:3rem;
+    text-decoration-line: underline;
+}

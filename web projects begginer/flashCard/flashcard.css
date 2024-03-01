@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,300;1,500&display=swap');
+
+*{
+    padding :0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    background-color: whitesmoke;
+}
+header{
+    background-color: rgb(35, 35, 211);
+}
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgb(32, 88, 103);
+    border-radius:5px ;
+    background-color: rgb(21, 122, 194);
+}
+button:hover{
+    background-color: rgba(251, 88, 88, 0.189);
+
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: rgb(227, 124, 229);
+}
+.nav button{
+    font-family: inherit;
+}
+.createBox{
+    width :38%;
+    margin: auto;
+    padding: 20px 10px;
+    margin-top: 10px;
+    border-radius:5px ;
+    background-color: rgb(77, 146, 206);
+    box-shadow:  0 20px 40px 0  rgba(9, 44, 182, 0.16);
+}
+.createBox textarea{
+    width : 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid rgb(156, 228, 156);
+
+}
+.flashCards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashCard{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
+}
+.flashCard h2{
+    font-size: 1rem;
+}
+@media(max-width:768ox){
+    .flashCards{
+        margin: auto;
+    }
+    .flashCard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:480px){
+    
+    .createBox{
+        width: 100%;
+    }
+    .flashCard{
+        width: 100%;
+    }
+}

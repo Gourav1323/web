@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <title>Img slider</title>
+ </head>
+ <body>
+    <div class="container">
+        <div class="image fade">
+            <img src="/img/js1.jpg" alt="system" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/js2.jpg" alt="system" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/js3.jpg" alt="system" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/js4.jpg" alt="system" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/js5.jpg" alt="system" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/js6.jpg" alt="system" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/js7.jpg" alt="system" width="100%">
+        </div>
+       <div class="dots">
+            <span class = " dot"></span>
+            <span class = " dot"></span>
+            <span class = " dot"></span>
+            <span class = " dot"></span>
+            <span class = " dot"></span>
+            <span class = " dot"></span>
+            <!-- <span class = " dot"></span>
+            <span class = " dot"></span>
+            <span class = " dot"></span>
+            <span class = " dot"></span> -->
+            <!-- <span class = " dot"></span> -->
+        </div>
+        <i id = "prev" onclick="show_image(-1)" class="fa fa-angle-left" ></i>
+        <i id = "next" onclick="show_image(1)" class="fa fa-angle-right" ></i>
+       
+    </div>
+    <script src="slider.js"></script>
+ </body>
+ </html>
